@@ -25,6 +25,10 @@ The Entit Releationship Diagram can be seen below.
 
 The runners table shows the `registration_date` for each new runner
 
+![runners](https://github.com/dannieRope/Cleaning-Pizza-Runner-Tables-SQL-Project/assets/132214828/031bdf0f-be6b-4701-8357-10ababf4eb6b)
+
+
+
 ## Table 2: customer_orders
 
 Customer pizza orders are captured in the customer_orders table with 1 row for each individual pizza that is part of the order.
@@ -35,20 +39,35 @@ Note that customers can order multiple pizzas in a single order with varying exc
 
 The `exclusions` and `extras` columns will need to be cleaned up before using them in your queries.
 
+![customerorder](https://github.com/dannieRope/Cleaning-Pizza-Runner-Tables-SQL-Project/assets/132214828/1e3b4abe-1d9e-465c-bed3-3ad272c3fb2e)
+
+
 ## Table 3: runner_orders
 After each orders are received through the system - they are assigned to a runner - however not all orders are fully completed and can be cancelled by the restaurant or the customer.
 
 The `pickup_time` is the timestamp at which the runner arrives at the Pizza Runner headquarters to pick up the freshly cooked pizzas. The `distance` and `duration` fields are related to how far and long the runner had to travel to deliver the order to the respective customer.
 
+![runnerorder](https://github.com/dannieRope/Cleaning-Pizza-Runner-Tables-SQL-Project/assets/132214828/824ae960-8cb1-4d3f-852f-59aad51ea8c2)
+
 
 ## Table 4: pizza_names
 At the moment - Pizza Runner only has 2 pizzas available the Meat Lovers or Vegetarian!
 
+![pizzaname](https://github.com/dannieRope/Cleaning-Pizza-Runner-Tables-SQL-Project/assets/132214828/baa0532c-7906-4504-82a8-8c82b014bf82)
+
+
 ## Table 5: pizza_recipes
 Each `pizza_id` has a standard set of toppings which are used as part of the pizza recipe.
 
+![toppings](https://github.com/dannieRope/Cleaning-Pizza-Runner-Tables-SQL-Project/assets/132214828/410defc7-5dd6-4690-b963-4fbfe7b8e980)
+
+
 ## Table 6: pizza_toppings
 This table contains all of the `topping_name` values with their corresponding `topping_id` value
+
+![pizzatoppings](https://github.com/dannieRope/Cleaning-Pizza-Runner-Tables-SQL-Project/assets/132214828/8caec181-993a-4b9a-b52f-c1d54a5eef4c)
+
+
 
 # Data Cleaning
 Before we start the cleaning process, it is best practice to go through the data to discover the data quality issues and abnormalities in the data.
